@@ -7,7 +7,7 @@ def time_this(fn):
             t0 = time.time()
             fn(NUM_RUNS, *args, **kwargs)
             t1 = time.time()
-        avg_time += (t1 - t0)
+            avg_time += (t1 - t0)
         avg_time /= NUM_RUNS
         print("Выполнение заняло %.5f секунд" % avg_time)
     return wrapper
